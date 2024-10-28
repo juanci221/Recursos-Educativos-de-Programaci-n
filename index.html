@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Recursos Educativos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚀 Recursos Educativos de Programación</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="search" 
+                placeholder="Explora cursos, videos y recursos..."
+                aria-label="Buscar contenido">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-globe"></i> Todos
+            </button>
+            <button class="filter-btn" data-filter="Desarrollo Web">
+                <i class="fas fa-code"></i> Desarrollo Web
+            </button>
+            <button class="filter-btn" data-filter="Ciencia de Datos">
+                <i class="fas fa-chart-bar"></i> Ciencia de Datos
+            </button>
+            <button class="filter-btn" data-filter="Videojuegos">
+                <i class="fas fa-gamepad"></i> Videojuegos
+            </button>
+        </div>
+
+        <section id="courses-section">
+            <h2 class="section-title">📚 Cursos Disponibles</h2>
+            <div id="courses-container" class="grid"></div>
+        </section>
+
+        <section id="videos-section">
+            <h2 class="section-title">🎥 Videos y Tutoriales</h2>
+            <div id="videos-container" class="grid"></div>
+        </section>
+
+        <section id="resources-section">
+            <h2 class="section-title">📑 Recursos Adicionales</h2>
+            <div id="resources-container" class="grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"> </script>
+</body>
+</html>
